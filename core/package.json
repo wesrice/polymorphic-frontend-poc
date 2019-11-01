@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@types/redux-logger": "^3.0.7",
+    "emotion": "^10.0.23",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/html": "^5.2.5",
+    "babel-loader": "^8.0.6",
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@maxmind/core",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "lint": "tslint -p ./tsconfig.lint.json -t stylish",
+    "start": "start-storybook -c ui/.storybook",
+    "setup": "yarn link",
+    "test": "ls -la"
+  },
+  "types": "dist/index.d.ts",
+  "version": "1.0.0"
+}
